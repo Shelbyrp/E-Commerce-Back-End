@@ -56,6 +56,8 @@ npm start
 
 The server will start. You can then view the application in the Insomnia Core.
 
+A .env is required to connect to MySql. In the .env include DB_USER='', DB_PW='' and DB_NAME='ecommerce_db. 'Be sure to add this with your details and include it in your gitignore file so that it doesn't upload to github. 
+
 ## License
 This project is licensed by the [MIT](https://opensource.org/licenses/MIT) license
 
