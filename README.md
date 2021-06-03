@@ -7,7 +7,7 @@ The E-Commerce Backend is a mysql database and application backend for an e-comm
 
 Link to the video Demo: [Video Demo](). 
 
-![Final result appears as:](./Assets/insomniatag.png)
+![Final result appears as:](./Assets/ecommerceex1.png)
 ![Final result appears as:]()
 
 ## Table of Contents
