@@ -47,10 +47,10 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new category
   try {
-    const categoryData= await Category.create({
+    await Category.create({
       category_name: req.body.category_name
     })
-    res.status(200).json(categoryData)
+    res.status(200).json({ message: `Added Catgeory ${req.body.category_name}` });
   } catch (error) {
     res.status(500).json(err);
   }
@@ -68,7 +68,7 @@ router.put('/:id', async (req, res) => {
           res.status(404).json({message:'No data for this category found using this id'});
           return;
         }
-        res.status(200).json(categoryData);
+        res.status(200).json({ message: `Update Catgeory ${req.body.category_name}` });
   } catch (error) {
     res.status(500).json(err);
   }
@@ -86,7 +86,7 @@ router.delete('/:id', async (req, res) => {
           res.status(404).json({message: 'No data for this category found using this id'});
           return;
         }
-        res.status(200).json(categoryData);
+        res.status(200).json({message: `Deleted product ${req.params.id}` });
   } catch (error) {
     res.status(500).json(err);
   }

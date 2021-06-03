@@ -62,7 +62,7 @@ router.put('/:id', async (req, res) => {
           res.status(404).json({message:'No tag found with this id'});
           return;
         }
-        res.status(200).json(tagData)
+        res.status(200).json(({ message: `Update tag id ${req.params.id}` }));
   } catch (error) {
     res.status(500).json(err);
   }
@@ -80,7 +80,7 @@ router.delete('/:id', async (req, res) => {
         res.status(404).json({message: 'No tag found with this id'});
         return;
       }
-      res.status(200).json(tagData)
+      res.status(200).json({message: `Deleted product ${req.params.id}` });
   } catch (error) {
     res.status(500).json(err);
   }
