@@ -5,7 +5,7 @@
 ## Description
 The E-Commerce Backend is a mysql database and application backend for an e-commerce site. This application has been built using MySQL2, Express, Sequelize and dotenv. Insomnia Core is utilized to demonstrate the functionalities of this application. 
 
-Link to the video Demo: [Video Demo](). 
+Link to the video Demo: [Video Demo](https://youtu.be/hzJOceYWJ4Y). 
 
 ![Final result appears as:](./Assets/ecommerceex1.png)
 ![Final result appears as:](./Assets/ecommerceex2.png)
